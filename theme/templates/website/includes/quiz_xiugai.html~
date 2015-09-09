@@ -1,0 +1,35 @@
+<div class="header">
+    <h2>Quiz</h2>
+</div>
+
+<div class="message">
+    {% autoescape false %}{{ section.content }}{% endautoescape %}
+</div>
+
+
+{% for quiz in section.quiz %}
+<div class="question">
+    <div class="question-header">Question {{ loop.index }} of {{ section.quiz.length }}</div>
+
+    <div class="question-content">
+        <div class="alert alert-success hidden">
+        </div>
+
+        <div class="alert alert-danger error-message hidden">
+        </div>
+
+        <div class="question-inner">
+        {% autoescape false %}{{ quiz.base }}{% endautoescape %}
+        </div>
+    </div>
+
+    <div class="hidden question-answers">
+        <div class="question-inner">
+        </div>
+    </div>
+</div>
+{% endfor %}
+
+<div class="buttons">
+  <input id="tijiao" type="submit" value="Submit" />
+</div>
