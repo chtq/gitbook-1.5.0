@@ -5,7 +5,7 @@ GitBook
 1. 环境是ubuntu12.04 32位系统
 2. 需要node.js, 版本是0.10.33，其他版本没试过，不知道会出现什么问题
 3. 在gitbook目录，npm install 安装需要的库
-
+4. 需要一些其他plugin支持
 
 
 ## 进行的主要改动
